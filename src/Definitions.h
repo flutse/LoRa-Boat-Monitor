@@ -113,7 +113,7 @@ int start = 0;                // Marker for found telegram RMC
 int c_counter = 0;            // Number of commata in RMC telegram
 
 // BME280 environment sensor (temperature, humidity, pressure)
-#define SEALEVELPRESSURE_HPA (1023.0) // Adjustment for altitude calculation
+#define SEALEVELPRESSURE_HPA (1013.0) // Adjustment for altitude calculation
 #define I2C_SDA 17            // SDA changed from GPIO21 to GPIO17
 #define I2C_SCL 22            // SCL standard GPIO22
 #define I2C_SPEED 100000      // I2C Speed 100KHz
