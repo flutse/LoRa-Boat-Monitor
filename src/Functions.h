@@ -914,7 +914,7 @@ void readValues() {
     if (String(actconf.envSensor) == "BME280") {
       DebugPrint(3, "Temperature = ");
       if(String(actconf.tempUnit) == "C"){
-        temperature = bme.readTemperature();
+        temperature = bme.readTemperature() - 6;
         DebugPrint(3, temperature);
         DebugPrintln(3, " *C");
       }
