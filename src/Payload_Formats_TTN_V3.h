@@ -81,9 +81,9 @@ function decodeUplink(input) {
   var toffset = 0;      // Temperature offset for BME280
   var poffset = 0;      // Pressure offset for altitude
 
-//  data.counter = ((input.bytes[1] << 8) | input.bytes[0]);
+  data.counter = ((input.bytes[1] << 8) | input.bytes[0]);
   var temperature = (((input.bytes[3] << 8) | input.bytes[2]) / 100) - 50 + toffset;
-//  data.temperature = Math.round(temperature * 10) / 10;
+  data.temperature = Math.round(temperature * 10) / 10;
   data.pressure = ((input.bytes[5] << 8) | input.bytes[4]) / 10 + poffset;
   data.humidity = ((input.bytes[7] << 8) | input.bytes[6]) / 100;
   var dewpoint = (((input.bytes[9] << 8) | input.bytes[8]) / 100) - 50;
