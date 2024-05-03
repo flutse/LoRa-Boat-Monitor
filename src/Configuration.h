@@ -4,7 +4,7 @@
 // Default configuration
 // Types 'byte' und 'word' doesn't work!
 typedef struct {
-  int valid = 8;                            // Number of configuration (Please change when the structure or values are changed)
+  int valid = 7;                            // Number of configuration (Please change when the structure or values are changed)
   int crypt = 0;                            // Activate for critical webside a password query [0 = off|1 = on]
   char password[31] = "12345678";           // Password for critical websides (settings, update and reboot)
   char devname[21] = "LoRa Boat Monitor";   // Device name for web configuration
@@ -12,8 +12,8 @@ typedef struct {
   char fversion[6] = "V1.06";               // Firmware version
   char license[12] = "GPL3";                // License type
   int debug = 3;                            // Debug mode 0=off 1=Errors 2=Errors + Warnings 3=Errors + Warnings + Messages
-  char cssid[31] = "MyBoat";                // SSID of WiFi Client
-  char cpassword[31] = "S6587rr94P";        // Password of WiFi Client
+  char cssid[31] = "schoxi";                // SSID of WiFi Client
+  char cpassword[31] = "lehan127";        // Password of WiFi Client
   int timeout = 30;                         // Connection timeout for client in [s] [30|90|120|150|180|210|240|270|300]
   char sssid[31] = "NoWa";                  // SSID of WiFi Server
   char spassword[31] = "12345678";          // Password of WiFi Server
@@ -51,7 +51,7 @@ typedef struct {
   float voffset = 6.47301;                  // Voltage offset [V]
   float a1vslope = 0.02860676;              // Volatge calibration coefficient a1
   float a2vslope = 0;                       // Volatge calibration coefficient a2
-  int vaverage = 1;                         // Volatge number of values for average building [1...100]
+  int vaverage = 100;                         // Volatge number of values for average building [1...100]
 
   float t1offset = 0;                       // Tank1 offset [l]
   float a1t1slope = 143.1974;               // Tank1 calibration coefficient a1
