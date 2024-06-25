@@ -51,7 +51,7 @@ typedef struct {
   float voffset = 6.47301;                  // Voltage offset [V]
   float a1vslope = 0.02860676;              // Volatge calibration coefficient a1
   float a2vslope = 0;                       // Volatge calibration coefficient a2
-  int vaverage = 100;                         // Volatge number of values for average building [1...100]
+  int vaverage = 10;                         // Volatge number of values for average building [1...100]
 
   float t1offset = 0;                       // Tank1 offset [l]
   float a1t1slope = 143.1974;               // Tank1 calibration coefficient a1
