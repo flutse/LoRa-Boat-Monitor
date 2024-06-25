@@ -845,7 +845,7 @@ String Settings(int num, String vname[31], String value[31])
     content += F("<option value='8'>8</option>");
     content += F("<option value='9'>9</option>");
     content += F("<option value='10'>10</option>");
-    content += F("<option value='100'>100</option>");
+    content += F("<option value='20'>20</option>");
     content += F("</select>");
     content += F("</td>");
     content += F("<td></td>");
