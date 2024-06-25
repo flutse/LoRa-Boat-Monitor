@@ -4,7 +4,7 @@
 // Default configuration
 // Types 'byte' und 'word' doesn't work!
 typedef struct {
-  int valid = 7;                            // Number of configuration (Please change when the structure or values are changed)
+  int valid = 8;                            // Number of configuration (Please change when the structure or values are changed)
   int crypt = 0;                            // Activate for critical webside a password query [0 = off|1 = on]
   char password[31] = "12345678";           // Password for critical websides (settings, update and reboot)
   char devname[21] = "LoRa Boat Monitor";   // Device name for web configuration
@@ -28,9 +28,9 @@ typedef struct {
   int skin = 0;                             // Skin for websides [0|1|2]
 
   // LoRaWAN device, network and session key
-  u4_t devaddr = 0x12345678;                // LoRa device address
-  u1_t nskey[16] = { 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88, 0x99, 0xAA, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF, 0x00 };  // LoRa Network session key
-  u1_t appkey[16] = { 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88, 0x99, 0xAA, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF, 0x00 }; // LoRa Application Key
+  u4_t devaddr = 0x260BCD1B;                // LoRa device address
+  u1_t nskey[16] = { 0x76, 0x94, 0x83, 0x4C, 0xB3, 0x22, 0x2E, 0x7D, 0xDC, 0xFE, 0x13, 0xCA, 0x71, 0x80, 0x48, 0x95};  // LoRa Network session key
+  u1_t appkey[16] = { 0x9B, 0xD6, 0xB2, 0x18, 0x53, 0x1F, 0x41, 0x62, 0x46, 0x90, 0xA7, 0xB4, 0x41, 0x3D, 0x7E, 0x37}; // LoRa Application Key
 
 
   char lorafrequency[6] = "EU868";          // LoRa frequency region [EU868|US915]
